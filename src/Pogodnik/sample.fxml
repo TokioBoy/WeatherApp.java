@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="440.0" prefWidth="291.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Pogodnik.Controller">
+    <children>
+        <AnchorPane layoutX="-1.0" layoutY="-1.0" prefHeight="69.0" prefWidth="291.0" style="-fx-background-color: grey;">
+            <children>
+                <Text layoutX="50.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Погодник by TokioBoy" textAlignment="CENTER" wrappingWidth="190.80341339111328">
+                    <font>
+                        <Font name="Bell MT Italic" size="24.0" />
+                    </font>
+                </Text>
+                <ImageView fitHeight="69.0" fitWidth="76.0" layoutY="36.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@assets/hatsune-miku_3840x2160_6uzr5.png" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="43.0" fitWidth="76.0" layoutX="215.0" layoutY="36.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@assets/hatsune-miku_3840x2160_6uzr5.png" />
+                    </image>
+                </ImageView>
+            </children>
+        </AnchorPane>
+        <TextField fx:id="gorod" focusTraversable="false" layoutX="117.0" layoutY="79.0" prefHeight="43.0" prefWidth="171.0" style="-fx-background-color: #8db600;">
+            <font>
+                <Font size="16.0" />
+            </font></TextField>
+        <Button fx:id="pogoda" layoutX="98.0" layoutY="131.0" mnemonicParsing="false" style="-fx-background-color: red;" text="Узнать погоду" textFill="#090909" />
+        <Text fx:id="infopogoda" fill="RED" fontSmoothingType="LCD" layoutX="39.0" layoutY="193.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Информация о погоде:">
+            <font>
+                <Font name="Constantia Italic" size="21.0" />
+            </font>
+        </Text>
+        <Text fx:id="tempnow" fill="RED" layoutX="7.0" layoutY="226.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Температура сейчас:">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Text>
+        <Text fx:id="feellike" fill="RED" layoutX="19.0" layoutY="260.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ощущается как:">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Text>
+        <Text fx:id="Maxtemp" fill="RED" layoutX="16.0" layoutY="291.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Максимальная t:">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Text>
+        <Text fx:id="MinTemp" fill="RED" layoutX="19.0" layoutY="320.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Минимальная t:">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Text>
+        <Text fx:id="pressure" fill="RED" layoutX="22.0" layoutY="351.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Давление:">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Text>
+        <Text fx:id="pozelanie" fill="#1eff00" layoutX="166.0" layoutY="423.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Счастливого Дня!">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Text>
+        <ImageView fitHeight="94.0" fitWidth="167.0" layoutX="-1.0" layoutY="370.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@assets/samurai-art-samurai-tadakatsu-khonda.jpg" />
+            </image>
+        </ImageView>
+        <Label layoutX="1.0" layoutY="90.0" prefHeight="26.0" prefWidth="117.0" text="Введите город:" textFill="RED">
+            <font>
+                <Font size="17.0" />
+            </font></Label>
+    </children>
+</AnchorPane>
